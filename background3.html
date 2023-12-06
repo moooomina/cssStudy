@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-3</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body {
+            height:200vh; /* 보이는 크기(뷰포트)에 2배 */
+            background-repeat:repeat-y; /* 위에에 따로 설정을 적어도 아래에 no-repeat를 적었기 때문에 위에서 읽는 css는 repeat-y를 덮어서 no-repeat가 되어버림 */
+            background:aqua url(./images/person.png) no-repeat fixed center bottom; /* no-repeat값을 안적으면 기본 설정값으로 적용이 되어버림 -> 통합속성에 적어주지 않고 개별속성을 따로 적어줄 경우 아래에 적어야 적용가능! */
+            background-size:200px;
+
+            /* Gradient(background) */
+            background:linear-gradient(-40deg, blue, red, pink); /* deg:각도설정 */
+            background: rgb(168,163,255);
+            background: radial-gradient(circle, rgba(168,163,255,1) 0%, rgba(9,9,121,1) 35%, rgba(9,9,121,1) 85%);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
