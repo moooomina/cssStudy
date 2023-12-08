@@ -1,0 +1,47 @@
+#all {
+    background-color:#F4F1E6;
+    font-family: 'Noto Sans KR', sans-serif;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+#all header {
+    width:15vw;
+    height:100vh;
+    background-color:#630000;
+    order:2;
+    padding:50px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+#all header a {
+    color:white;
+    font-size:1.25rem;
+    line-height:2;
+}
+#all #wrap {order:1;}
+#all #wrap main {
+    width:85vw;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+#all #wrap main h1 {
+    font-size:3.125rem;
+    color:#630000;
+}
+#all #wrap main .photo {}
+#all #wrap main .contents {
+    font-family:'코트라 희망체', 'Noto Sans KR';
+    font-size:1.75rem;
+    text-align:center;
+    line-height:1.5;
+    margin:30px;
+}
+#all footer {
+    margin-bottom:30px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    line-height:1.7;
+}
