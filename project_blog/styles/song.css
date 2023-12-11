@@ -1,0 +1,20 @@
+/* song.html(크리스마스_Song) 전용 css */
+main {background-color:darkolivegreen;}
+main h1 {}
+main h2 {}
+main #song {
+    background-color: floralwhite;
+    width:70%;
+    margin:30px auto;
+}
+main #song thead {
+    border-bottom:3px solid darkgreen;
+}
+main #song thead tr {}
+main #song thead tr th {padding:15px;}
+main #song thead tr th:nth-child(1) {width:300px;}
+main #song thead tr th:nth-child(3) {width:300px;}
+main #song tbody {background-color:white;}
+main #song tbody tr {}
+main #song tbody tr th {}
+main #song tbody tr td {padding:15px;}

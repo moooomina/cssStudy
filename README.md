@@ -47,3 +47,16 @@
 6. 특정 item만 교자축을 다르게 설정하고 싶다면? 자식(item)에게 'align-self:값' 적용
 7. (선택) item의 태그순서와 다르게 화면에서 보이는 순서를 다르게 하고 싶다면? 'oder:값'
 8. (선택) item의 너비값을 전체 부모 기준으로 일정하게 설정하고 싶다면? 'flex:값'
+----
+# project_blog 23/12/08 ~
+## title : 크리스마스
+* index.html(main)
+* course.html(추천_Course)
+* live.html(방콕_Live)
+* song.html(크리스마스_Song)
+* ※모든 html은 서로 '뒤로/앞으로' 기능없이 이동할 수 있어야 한다!!
+----
+## 공통영역 HTML, CSS
+* 모든 html 공통으로 존재해야하는 HTML => Header, main(내용제거), footer
+* CSS 공통영역 => reset, common.css(Header, main(내용제거), footer)
+* CSS 개별영역 => index.html, course.html, live.html, song.html의 main 내용 영역
