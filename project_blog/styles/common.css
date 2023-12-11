@@ -9,7 +9,7 @@
 }
 #all header {
     width:15vw;
-    height:100vh;
+    height:auto;
     background-color:#630000;
     order:2;
     padding:50px;
@@ -30,12 +30,14 @@
     align-items:center;
 }
 #all #wrap main h1 {
+    font-family: 'DM Serif Display', serif;
     font-size:3.125rem;
-    color:#630000;
+    color:#F4F1E6;
+    margin:50px;
 }
 /* footer */
 #all footer {
-    margin-bottom:30px;
+    margin:30px;
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
