@@ -1,2 +1,23 @@
 /* live.html(방콕_Live) 전용 css */
-main {height:100vh; background-color:darkgreen;}
+main {background-color:darkgreen;}
+main h1 {
+    color:#F4F1E6;
+    font-family: 'DM Serif Display', serif;
+    font-size:2rem;
+}
+main p {}
+main p img {}
+main h2 {
+    color:#F4F1E6;
+    font-size:1.25rem;
+    margin:20px;
+}
+main ul {
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+main ul li {
+    color:#F4F1E6;
+    margin-bottom:10px;
+}
+main ul li:last-child {margin-bottom:50px;}

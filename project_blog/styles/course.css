@@ -1,2 +1,38 @@
 /* course.html(추천_Course) 전용 css */
-main {height:100vh; background-color:darkred;}
+main {background-color:darkred;}
+main h1 {
+    color:#F4F1E6;
+    font-family: 'DM Serif Display', serif;
+    font-size:2rem;
+}
+main p {}
+main p iframe {}
+main h2 {
+    color:#F4F1E6;
+    font-size:1.5rem;
+    margin:2%;
+}
+main #course {
+    background-color: floralwhite;
+    width:70%;
+    margin:20px auto;
+    margin-bottom:50px;
+}
+main #course thead {
+    border-bottom:3px solid darkred;
+}
+main #course thead tr {}
+main #course thead tr th {
+    padding:15px;
+    font-weight:500;
+    font-size:1.125rem;
+    color:darkred;
+}
+main #course thead tr th:nth-child(1) {border-right:3px solid darkred;}
+main #course thead tr th:nth-child(2) {}
+main #course tbody {}
+main #course tbody tr {}
+main #course tbody tr th {padding:30px;}
+main #course tbody tr th:nth-child(1) {border-right:3px solid darkred;}
+main #course tbody tr th:nth-child(2) {}
+main #course tbody tr td {padding:15px;}

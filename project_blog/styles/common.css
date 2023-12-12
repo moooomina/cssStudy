@@ -6,9 +6,11 @@
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
+    width:calc(100%); margin:0 auto;
+    height:auto;
 }
 #all header {
-    width:15vw;
+    width:calc(100%); margin:0 auto;
     height:auto;
     background-color:#630000;
     order:2;
