@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 쇼핑몰2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* max-width Desktop -> Tablet -> mobile 설계 */
+            /* media 기준설정 전 1280~max */
+            main {
+                max-width:1400px; /* 최대 크기 제한 1400 -> 이걸 적어주면 적어준 값까지 커지고 그 이상으로는 여백이 생김 */
+                width:calc(100% - 32px); margin:0 auto;
+                background-color:aliceblue;
+                display:flex; flex-flow:row wrap;
+                justify-content:space-between;
+            }
+            main a {
+                width:calc(100% / 5 - 80px / 5);
+                margin-bottom:20px;
+            }
+            main a img {width:100%}
+            /* 큰화면 부터 제작할 때는 max-width를 조건없이 설정 한 후, 1280px 이하일 때를 만들면 됨 */
+        @media screen and (max-width:1279px){/* 774~1279 */
+            main a {width:calc(100% / 3 - 40px / 3);}
+        }
+        @media screen and (max-width:744px){/* 320~743 */
+            main a {width:calc(50% - 10px);}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#"><img src="./images_bird/01.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/02.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/03.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/04.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/05.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/06.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/07.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/08.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/09.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/10.jpg" alt=""></a>
+</main>
+</body>
+</html>

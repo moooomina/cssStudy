@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 쇼핑몰</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        @media screen and (min-width:320px){/* 320~743 */
+            main {/* - (빼기)뒤에 반드시 여백이 들어가야 함 */
+                width:calc(100% - 32px); margin:0 auto;
+                background-color:#f1f1f1;
+                display:flex; flex-flow:row wrap;
+                justify-content:space-between;
+                }
+            main a {
+                width:calc(50% - 10px); /* 2개의 상품 여백이 20px이 되어야 하므로 20/2를 해서 10px을 빼줘야함 */
+                margin-bottom:20px;
+            }
+            main a img {width:100%}
+            /* 이미지는 기존 px값을 가지고 있기 때문에 부모를 따라가게 하려면 너비를 100%로 설정해줘야함 */
+        }/* 320 이상일 때 */
+        @media screen and (min-width:744px){/* 변경하는 값이 없으면 변경하는 것만 수정하면 됨, 값을 안적으면 이전에 적은걸 그대로 사용하므로 바뀌는 부분만 수정해주기 */
+            /* main a {width:calc(33.33% - 13.33px);} */ /* 3개의 상품 여백이 40px이 되어야 하므로 40/3을 해서 13.33을 빼줘야함 (밖에 여백은 생각X 위에서 이미 줬기 때문에!) */
+            main a {width:calc(100% / 3 - 40px / 3);} /* 여기서 사칙연산을 적어도 동일하게 적용됨! (단, 사칙연산 앞에는 공백이 무조건 들어가야함) */
+        }/* 744 이상일 때 */
+        @media screen and (min-width:1280px){/* 1280~max */
+            main {max-width:1400px;}
+            main a {width:calc(100% / 5 - 80px / 5);}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <a href="#"><img src="./images_bird/01.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/02.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/03.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/04.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/05.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/06.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/07.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/08.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/09.jpg" alt=""></a>
+        <a href="#"><img src="./images_bird/10.jpg" alt=""></a>
+</main>
+</body>
+</html>
